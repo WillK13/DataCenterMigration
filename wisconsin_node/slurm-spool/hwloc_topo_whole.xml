@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topology SYSTEM "hwloc2.dtd">
+<topology version="2.0">
+  <object type="Machine" os_index="0" cpuset="0x000000ff,0xffffffff" complete_cpuset="0x000000ff,0xffffffff" allowed_cpuset="0x000000ff,0xffffffff" nodeset="0x00000001" complete_nodeset="0x00000001" allowed_nodeset="0x00000001" gp_index="1">
+    <info name="DMIProductName" value="UCSC-C220-M4S"/>
+    <info name="DMIProductVersion" value="A0"/>
+    <info name="DMIProductSerial" value="FCH1944V2XA"/>
+    <info name="DMIProductUUID" value="437dfc8e-82b9-9a4d-a206-6cc0d0ba66c8"/>
+    <info name="DMIBoardVendor" value="Cisco Systems Inc"/>
+    <info name="DMIBoardName" value="UCSC-C220-M4S"/>
+    <info name="DMIBoardVersion" value="74-12419-01"/>
+    <info name="DMIBoardSerial" value="FCH19447S9J"/>
+    <info name="DMIBoardAssetTag" value="Unknown"/>
+    <info name="DMIChassisVendor" value="Cisco Systems Inc"/>
+    <info name="DMIChassisType" value="23"/>
+    <info name="DMIChassisVersion" value="74-12502-01"/>
+    <info name="DMIChassisSerial" value="FCH1944V2XA"/>
+    <info name="DMIChassisAssetTag" value="Unknown"/>
+    <info name="DMIBIOSVendor" value="Cisco Systems, Inc."/>
+    <info name="DMIBIOSVersion" value="C220M4.4.1.2c.0.0202211901"/>
+    <info name="DMIBIOSDate" value="02/02/2021"/>
+    <info name="DMISysVendor" value="Cisco Systems Inc"/>
+    <info name="Backend" value="Linux"/>
+    <info name="LinuxCgroup" value="/user.slice"/>
+    <info name="OSName" value="Linux"/>
+    <info name="OSRelease" value="5.15.0-138-generic"/>
+    <info name="OSVersion" value="#148-Ubuntu SMP Fri Mar 14 19:05:48 UTC 2025"/>
+    <info name="HostName" value="node-2.wkamin01-260182.carbondatacenter-pg0.wisc.cloudlab.us"/>
+    <info name="Architecture" value="x86_64"/>
+    <info name="hwlocVersion" value="2.7.0"/>
+    <info name="ProcessName" value="slurmd"/>
+    <object type="NUMANode" os_index="0" cpuset="0x000000ff,0xffffffff" complete_cpuset="0x000000ff,0xffffffff" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="66" local_memory="168664510464">
+      <page_type size="4096" count="41177859"/>
+      <page_type size="2097152" count="0"/>
+      <page_type size="1073741824" count="0"/>
+    </object>
+    <object type="Package" os_index="0" cpuset="0x3ff003ff" complete_cpuset="0x3ff003ff" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="3">
+      <info name="CPUVendor" value="GenuineIntel"/>
+      <info name="CPUFamilyNumber" value="6"/>
+      <info name="CPUModelNumber" value="63"/>
+      <info name="CPUModel" value="Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz"/>
+      <info name="CPUStepping" value="2"/>
+      <object type="L3Cache" os_index="0" cpuset="0x3ff003ff" complete_cpuset="0x3ff003ff" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="5" cache_size="26214400" depth="3" cache_linesize="64" cache_associativity="20" cache_type="0">
+        <info name="Inclusive" value="1"/>
+        <object type="Core" os_index="0" cpuset="0x00100001" complete_cpuset="0x00100001" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="2">
+          <object type="PU" os_index="0" cpuset="0x00000001" complete_cpuset="0x00000001" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="4"/>
+          <object type="PU" os_index="20" cpuset="0x00100000" complete_cpuset="0x00100000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="46"/>
+        </object>
+        <object type="Core" os_index="1" cpuset="0x00200002" complete_cpuset="0x00200002" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="6">
+          <object type="PU" os_index="1" cpuset="0x00000002" complete_cpuset="0x00000002" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="7"/>
+          <object type="PU" os_index="21" cpuset="0x00200000" complete_cpuset="0x00200000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="47"/>
+        </object>
+        <object type="Core" os_index="2" cpuset="0x00400004" complete_cpuset="0x00400004" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="8">
+          <object type="PU" os_index="2" cpuset="0x00000004" complete_cpuset="0x00000004" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="9"/>
+          <object type="PU" os_index="22" cpuset="0x00400000" complete_cpuset="0x00400000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="48"/>
+        </object>
+        <object type="Core" os_index="3" cpuset="0x00800008" complete_cpuset="0x00800008" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="10">
+          <object type="PU" os_index="3" cpuset="0x00000008" complete_cpuset="0x00000008" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="11"/>
+          <object type="PU" os_index="23" cpuset="0x00800000" complete_cpuset="0x00800000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="49"/>
+        </object>
+        <object type="Core" os_index="4" cpuset="0x01000010" complete_cpuset="0x01000010" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="12">
+          <object type="PU" os_index="4" cpuset="0x00000010" complete_cpuset="0x00000010" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="13"/>
+          <object type="PU" os_index="24" cpuset="0x01000000" complete_cpuset="0x01000000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="50"/>
+        </object>
+        <object type="Core" os_index="8" cpuset="0x02000020" complete_cpuset="0x02000020" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="14">
+          <object type="PU" os_index="5" cpuset="0x00000020" complete_cpuset="0x00000020" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="15"/>
+          <object type="PU" os_index="25" cpuset="0x02000000" complete_cpuset="0x02000000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="51"/>
+        </object>
+        <object type="Core" os_index="9" cpuset="0x04000040" complete_cpuset="0x04000040" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="16">
+          <object type="PU" os_index="6" cpuset="0x00000040" complete_cpuset="0x00000040" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="17"/>
+          <object type="PU" os_index="26" cpuset="0x04000000" complete_cpuset="0x04000000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="52"/>
+        </object>
+        <object type="Core" os_index="10" cpuset="0x08000080" complete_cpuset="0x08000080" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="18">
+          <object type="PU" os_index="7" cpuset="0x00000080" complete_cpuset="0x00000080" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="19"/>
+          <object type="PU" os_index="27" cpuset="0x08000000" complete_cpuset="0x08000000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="53"/>
+        </object>
+        <object type="Core" os_index="11" cpuset="0x10000100" complete_cpuset="0x10000100" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="20">
+          <object type="PU" os_index="8" cpuset="0x00000100" complete_cpuset="0x00000100" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="21"/>
+          <object type="PU" os_index="28" cpuset="0x10000000" complete_cpuset="0x10000000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="54"/>
+        </object>
+        <object type="Core" os_index="12" cpuset="0x20000200" complete_cpuset="0x20000200" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="22">
+          <object type="PU" os_index="9" cpuset="0x00000200" complete_cpuset="0x00000200" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="23"/>
+          <object type="PU" os_index="29" cpuset="0x20000000" complete_cpuset="0x20000000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="55"/>
+        </object>
+      </object>
+    </object>
+    <object type="Package" os_index="1" cpuset="0x000000ff,0xc00ffc00" complete_cpuset="0x000000ff,0xc00ffc00" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="25">
+      <info name="CPUVendor" value="GenuineIntel"/>
+      <info name="CPUFamilyNumber" value="6"/>
+      <info name="CPUModelNumber" value="63"/>
+      <info name="CPUModel" value="Intel(R) Xeon(R) CPU E5-2660 v3 @ 2.60GHz"/>
+      <info name="CPUStepping" value="2"/>
+      <object type="L3Cache" os_index="1" cpuset="0x000000ff,0xc00ffc00" complete_cpuset="0x000000ff,0xc00ffc00" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="27" cache_size="26214400" depth="3" cache_linesize="64" cache_associativity="20" cache_type="0">
+        <info name="Inclusive" value="1"/>
+        <object type="Core" os_index="0" cpuset="0x40000400" complete_cpuset="0x40000400" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="24">
+          <object type="PU" os_index="10" cpuset="0x00000400" complete_cpuset="0x00000400" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="26"/>
+          <object type="PU" os_index="30" cpuset="0x40000000" complete_cpuset="0x40000000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="56"/>
+        </object>
+        <object type="Core" os_index="1" cpuset="0x80000800" complete_cpuset="0x80000800" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="28">
+          <object type="PU" os_index="11" cpuset="0x00000800" complete_cpuset="0x00000800" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="29"/>
+          <object type="PU" os_index="31" cpuset="0x80000000" complete_cpuset="0x80000000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="57"/>
+        </object>
+        <object type="Core" os_index="2" cpuset="0x00000001,0x00001000" complete_cpuset="0x00000001,0x00001000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="30">
+          <object type="PU" os_index="12" cpuset="0x00001000" complete_cpuset="0x00001000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="31"/>
+          <object type="PU" os_index="32" cpuset="0x00000001,0x0" complete_cpuset="0x00000001,0x0" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="58"/>
+        </object>
+        <object type="Core" os_index="3" cpuset="0x00000002,0x00002000" complete_cpuset="0x00000002,0x00002000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="32">
+          <object type="PU" os_index="13" cpuset="0x00002000" complete_cpuset="0x00002000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="33"/>
+          <object type="PU" os_index="33" cpuset="0x00000002,0x0" complete_cpuset="0x00000002,0x0" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="59"/>
+        </object>
+        <object type="Core" os_index="4" cpuset="0x00000004,0x00004000" complete_cpuset="0x00000004,0x00004000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="34">
+          <object type="PU" os_index="14" cpuset="0x00004000" complete_cpuset="0x00004000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="35"/>
+          <object type="PU" os_index="34" cpuset="0x00000004,0x0" complete_cpuset="0x00000004,0x0" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="60"/>
+        </object>
+        <object type="Core" os_index="8" cpuset="0x00000008,0x00008000" complete_cpuset="0x00000008,0x00008000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="36">
+          <object type="PU" os_index="15" cpuset="0x00008000" complete_cpuset="0x00008000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="37"/>
+          <object type="PU" os_index="35" cpuset="0x00000008,0x0" complete_cpuset="0x00000008,0x0" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="61"/>
+        </object>
+        <object type="Core" os_index="9" cpuset="0x00000010,0x00010000" complete_cpuset="0x00000010,0x00010000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="38">
+          <object type="PU" os_index="16" cpuset="0x00010000" complete_cpuset="0x00010000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="39"/>
+          <object type="PU" os_index="36" cpuset="0x00000010,0x0" complete_cpuset="0x00000010,0x0" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="62"/>
+        </object>
+        <object type="Core" os_index="10" cpuset="0x00000020,0x00020000" complete_cpuset="0x00000020,0x00020000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="40">
+          <object type="PU" os_index="17" cpuset="0x00020000" complete_cpuset="0x00020000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="41"/>
+          <object type="PU" os_index="37" cpuset="0x00000020,0x0" complete_cpuset="0x00000020,0x0" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="63"/>
+        </object>
+        <object type="Core" os_index="11" cpuset="0x00000040,0x00040000" complete_cpuset="0x00000040,0x00040000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="42">
+          <object type="PU" os_index="18" cpuset="0x00040000" complete_cpuset="0x00040000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="43"/>
+          <object type="PU" os_index="38" cpuset="0x00000040,0x0" complete_cpuset="0x00000040,0x0" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="64"/>
+        </object>
+        <object type="Core" os_index="12" cpuset="0x00000080,0x00080000" complete_cpuset="0x00000080,0x00080000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="44">
+          <object type="PU" os_index="19" cpuset="0x00080000" complete_cpuset="0x00080000" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="45"/>
+          <object type="PU" os_index="39" cpuset="0x00000080,0x0" complete_cpuset="0x00000080,0x0" nodeset="0x00000001" complete_nodeset="0x00000001" gp_index="65"/>
+        </object>
+      </object>
+    </object>
+  </object>
+  <support name="discovery.pu"/>
+  <support name="discovery.numa"/>
+  <support name="discovery.numa_memory"/>
+  <support name="discovery.disallowed_pu"/>
+  <support name="discovery.disallowed_numa"/>
+  <support name="discovery.cpukind_efficiency"/>
+  <support name="cpubind.set_thisproc_cpubind"/>
+  <support name="cpubind.get_thisproc_cpubind"/>
+  <support name="cpubind.set_proc_cpubind"/>
+  <support name="cpubind.get_proc_cpubind"/>
+  <support name="cpubind.set_thisthread_cpubind"/>
+  <support name="cpubind.get_thisthread_cpubind"/>
+  <support name="cpubind.set_thread_cpubind"/>
+  <support name="cpubind.get_thread_cpubind"/>
+  <support name="cpubind.get_thisproc_last_cpu_location"/>
+  <support name="cpubind.get_proc_last_cpu_location"/>
+  <support name="cpubind.get_thisthread_last_cpu_location"/>
+  <support name="membind.set_thisthread_membind"/>
+  <support name="membind.get_thisthread_membind"/>
+  <support name="membind.set_area_membind"/>
+  <support name="membind.get_area_membind"/>
+  <support name="membind.alloc_membind"/>
+  <support name="membind.firsttouch_membind"/>
+  <support name="membind.bind_membind"/>
+  <support name="membind.interleave_membind"/>
+  <support name="membind.migrate_membind"/>
+  <support name="membind.get_area_memlocation"/>
+  <support name="custom.exported_support"/>
+  <cpukind cpuset="0x000000ff,0xffffffff">
+    <info name="FrequencyMaxMHz" value="3300"/>
+  </cpukind>
+</topology>
